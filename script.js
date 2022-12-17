@@ -24,6 +24,31 @@ console.log(pwLength, isSpecial);
 
 function generatePassword() {
     var pwCharacters = [];
+    var PW = [];
+    console.log(pwCharacters);
+    if (isLowerCase.checked === true) {
+      pwCharacters.push(...alphaLower);
+    }
+    if (isUpperCase.checked === true) {
+      pwCharacters.push(...alphaUpper);
+    }
+    if (isNumeric.checked === true) {
+      pwCharacters.push(...numeric);
+    }
+    if (isSpecial.checked === true) {
+      pwCharacters.push(...symbol);
+    }
+
+    if (pwCharacters.length === 0) {
+      return "No Character Set Selected"
+    } else {
+      for (let i = 0; i < pwLength.value; i++) {
+        var randomChar = pwCharacters[Math.floor(Math.random() * (pwCharacters.length - 1))]
+        PW.push(randomChar);
+        
+      }
+      return PW.join('');
+    }
 
 }
 
