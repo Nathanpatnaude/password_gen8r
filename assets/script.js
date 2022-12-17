@@ -21,7 +21,6 @@ var alphaLower = alpha.split('');
 var alphaUpper = alpha.toUpperCase().split('');
 var numeric = "1234567890".split('');
 var symbol = "~`! @#$%^&*()_-+={[}]|\:;'<,>.?/".split('');
-console.log(pwLength, isSpecial);
 
 //    Uppercase letters: A-Z.
 // Lowercase letters: a-z.
