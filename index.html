@@ -16,29 +16,34 @@
     </header>
     <div class="card">
       <div class="card-header">
-        <div>
+        <div class="row">
           <h2>Generate a Password</h2>
           <div class="slidecontainer pwSlider">
+            Password Length:
             <input type="range" min="8" max="128" value="16" class="slider" id="pwLength">
-            Value: <span id="pwLengthShow"></span>
+             <input type="number" id="pwLengthShow"></input>
           </div>
         </div>
-        <label class="container">
-          <input type="checkbox" checked="checked" id="isLowerCase">
-          <span class="checkmark"></span>use a-z
-        </label>
-        <label class="container">
-          <input type="checkbox" checked="checked" id="isUpperCase">
-          <span class="checkmark"></span>use A-Z
-        </label>
-        <label class="container">
-          <input type="checkbox" checked="checked" id="isNumeric">
-          <span class="checkmark"></span>use 0-9
-        </label>
-        <label class="container">
-          <input type="checkbox" checked="checked" id="isSpecial">
-          <span class="checkmark"></span>use special
-        </label>
+        <div class="row">
+           
+          <label class="container">
+            <input type="checkbox" checked="checked" id="isLowerCase">
+            <span class="checkmark"></span>use a-z
+          </label>
+          <label class="container">
+            <input type="checkbox" checked="checked" id="isUpperCase">
+            <span class="checkmark"></span>use A-Z
+          </label>
+          <label class="container">
+            <input type="checkbox" checked="checked" id="isNumeric">
+            <span class="checkmark"></span>use 0-9
+          </label>
+          <label class="container">
+            <input type="checkbox" checked="checked" id="isSpecial">
+            <span class="checkmark"></span>use ~`! @#$%^&*()_-+={[}]|\:;'<,>.?/
+          </label>
+           
+        </div>
       </div>
       <div class="card-body">
         <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
