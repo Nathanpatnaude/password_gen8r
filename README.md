@@ -2,10 +2,10 @@
 
   
 ## Table of Contents
+- [Table of Contents](#table-of-contents)
 - [Description](#description)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
-- [Table of Contents](#table-of-contents)
 - [Usage](#usage)
 - [Questions](#questions)
 
@@ -19,8 +19,11 @@ The password can be between 8-128 characters, and can contain:
 - numbers
 - symbols
 
-The length and character type can be chosen in the html input feilds.
-The password is then printed into the html, visible to the user.
+The user is prompted for length and character type in the html input feilds BEFORE clicking the Generate Password button.
+
+AFTER clicking the generate password button:
+The password is then printed into the html textarea, visible to the user.
+
 
 
 ![Password Gen8r](./assets/passwordgen8r.png)  
