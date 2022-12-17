@@ -31,7 +31,6 @@ console.log(pwLength, isSpecial);
 function generatePassword() {
     var availableCharacters = [];
     var PW = [];
-    console.log(availableCharacters);
     // pushes the selected datasets to availableCharacters
     if (isLowerCase.checked === true) {
       availableCharacters.push(...alphaLower);
