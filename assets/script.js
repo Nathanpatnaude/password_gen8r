@@ -38,6 +38,8 @@ function generatePassword() {
       availableCharacters.push(...alphaUpper);
     }
     if (isNumeric.checked === true) {
+      // pushes numeric range twice to increase odds
+      availableCharacters.push(...numeric);
       availableCharacters.push(...numeric);
     }
     if (isSpecial.checked === true) {
